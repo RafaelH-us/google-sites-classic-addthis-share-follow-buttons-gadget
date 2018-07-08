@@ -1,1 +1,29 @@
-<Module> <ModulePrefs title="AddThis Share and Follow Buttons" width="450" height="50" title_url="https://github.com/RafaelH-us" description="AddThis Share and Follow Buttons for Google Sites Classic" author="Rafael Hernandez"></ModulePrefs> <UserPref name="myTitle" display_name="Title to be shared" required="false" default_value="TITLE"/> <UserPref name="myUrl" display_name="URL to redirect to" required="false" default_value="URL"/> <UserPref name="myPubid" display_name="Addthis PUB ID" required="true" default_value="PUB ID"/> <UserPref name="myType" display_name="AddThis Type Tools" default_value="addthis_inline_share_toolbox" datatype="enum"> <EnumValue value="addthis_sharing_toolbox" display_value="Horizontal Sharing Buttons (Min-height 40px)"/> <EnumValue value="addthis_horizontal_follow_toolbox" display_value="Horizontal Follow Us (Min-height 40px)"/> </UserPref> <Content type="html"> <![CDATA[ <style type="text/css"> body { background-color: transparent; margin: 5px 0 0 0; padding: 0; } </style> <div class='__UP_myType__' data-url='__UP_myUrl__' data-title='__UP_myTitle__'></div> <script type='text/javascript' src='https://s7.addthis.com/js/300/addthis_widget.js#pubid=__UP_myPubid__'></script> ]]> </Content></Module>
+<Module>
+    <ModulePrefs
+        title="AddThis Share and Follow Buttons"
+        width="450"
+        height="50"
+        title_url="https://github.com/RafaelH-us"
+        description="AddThis Share and Follow Buttons for Google Sites Classic" author="Rafael Hernandez"
+        >
+    </ModulePrefs>
+    <UserPref name="myTitle" display_name="Title to be shared" required="false" default_value="TITLE"/>
+    <UserPref name="myUrl" display_name="URL to redirect to" required="false" default_value="URL"/>
+    <UserPref name="myPubid" display_name="Addthis PUB ID" required="true" default_value="PUB ID"/>
+    <UserPref name="myType" display_name="AddThis Type Tools" default_value="addthis_inline_share_toolbox" datatype="enum">
+        <EnumValue value="addthis_sharing_toolbox" display_value="Horizontal Sharing Buttons (Min-height 40px)"/>
+        <EnumValue value="addthis_horizontal_follow_toolbox" display_value="Horizontal Follow Us (Min-height 40px)"/>
+    </UserPref>
+    <Content type="html">
+        <![CDATA[
+            <style type="text/css">
+                body {
+                    background-color: transparent;
+                    margin: 5px 0 0 0; padding: 0;
+                }
+            </style>
+            <div class='__UP_myType__' data-url='__UP_myUrl__' data-title='__UP_myTitle__'></div>
+            <script type='text/javascript' src='https://s7.addthis.com/js/300/addthis_widget.js#pubid=__UP_myPubid__'></script>
+        ]]>
+    </Content>
+</Module>
